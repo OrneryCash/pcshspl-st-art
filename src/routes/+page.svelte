@@ -1,5 +1,6 @@
 <script>
     import Header from "./Header.svelte";
+    import Gallery from "./Gallery.svelte";
 </script>
 
 <Header />
@@ -8,4 +9,5 @@
         <h1>PCSHSPL</h1>
         <h1>Y2K Street Art</h1>
     </div>
+    <Gallery />
 </div>
