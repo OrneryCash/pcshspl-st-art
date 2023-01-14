@@ -46,5 +46,9 @@
             <Button {room} {active} on:message={handleMessage} />
         {/each}
     </div>
-    <Showcase />
+    {#each classroom as {room, active} (room)}
+        {#if active}
+            <Showcase {room} />
+        {/if}
+    {/each}
 </div>
