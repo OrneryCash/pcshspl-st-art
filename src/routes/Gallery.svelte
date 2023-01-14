@@ -27,11 +27,23 @@
             active: false
         },
     ]
+
+    function handleMessage(event) {
+        classroom.forEach((r) => {
+            if (r.room === event.detail.room) {
+                r.active = true
+            } else {
+                r.active = false
+            }
+        })
+        classroom = classroom
+    }
 </script>
+
 <div class="flex flex-col items-center -mt-20">
     <div class="flex flex-row gap-x-4">
         {#each classroom as {room, active} (room)}
-            <Button {room} {active} />
+            <Button {room} {active} on:message={handleMessage} />
         {/each}
     </div>
     <Showcase />
