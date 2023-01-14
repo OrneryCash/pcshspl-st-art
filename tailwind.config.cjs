@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {},
     backgroundImage: {
-      "art": "url('images/art-background.webp')"
+      "art": "url('./images/art-background.webp')"
     }
   },
   plugins: [],
