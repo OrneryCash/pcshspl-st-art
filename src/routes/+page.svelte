@@ -9,5 +9,5 @@
         <h1>PCSHSPL</h1>
         <h1>Y2K Street Art</h1>
     </div>
-    <Gallery />
 </div>
+<Gallery />
