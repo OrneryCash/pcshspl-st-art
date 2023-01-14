@@ -5,6 +5,6 @@
 
 <div class="grid grid-cols-4 mt-6 w-full place-items-center gap-y-4">
     {#each number as num}
-        <img class="aspect-a3 w-40" src={`../src/images/class${room}.webp`} alt={`Class ${room}`} />
+        <img class="aspect-a3 w-40" src={`/class${room}.webp`} alt={`Class ${room}`} />
     {/each}
 </div>
