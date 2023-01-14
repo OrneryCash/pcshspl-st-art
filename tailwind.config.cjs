@@ -5,6 +5,9 @@ module.exports = {
     extend: {},
     backgroundImage: {
       "art": "url('./images/art-background.webp')"
+    },
+    aspectRatio: {
+      "a3": 1/1.4142
     }
   },
   plugins: [],
