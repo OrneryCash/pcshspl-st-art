@@ -4,7 +4,7 @@
 </script>
 
 <svelte:head>
-    <title>PCSHSPL Y2K Art Street</title>
+    <title>PCSHSPL Y2K Street Art</title>
     <meta name="description" content="PCSHSPL Y2K Street Art" />
     <meta name="keywords" content="Y2K, Street Art, PCSHSPL" />
     <meta name="author" content="Teerapad Pipadboonyarat" />
