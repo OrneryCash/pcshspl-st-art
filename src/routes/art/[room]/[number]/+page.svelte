@@ -1,24 +1,24 @@
 <script>
 	export let data;
-    $: room = data.ar.room
-    $: number = data.ar.number
-    const students = [24, 24, 25, 24, 23, 24]
-    let previous = ""
-    let next = "" 
-    $: if (room === 1 && number === 1) {
-        previous = "/art/1/1/#"
-    } else if (number === 1) {
-        previous = `/art/${room-1}/${students[room-2]}`
-    } else {
-        previous = `/art/${room}/${number-1}`
-    }
-    $: if (room === 6 && number === 24) {
-        next = "/art/6/24/#"
-    } else if (students[room-1] === number) {
-        next = `/art/${room+1}/1`
-    } else {
-        next = `/art/${room}/${number+1}`
-    }
+	$: room = data.ar.room;
+	$: number = data.ar.number;
+	const students = [24, 24, 25, 24, 23, 24];
+	let previous = '';
+	let next = '';
+	$: if (room === 1 && number === 1) {
+		previous = '/art/1/1/#';
+	} else if (number === 1) {
+		previous = `/art/${room - 1}/${students[room - 2]}`;
+	} else {
+		previous = `/art/${room}/${number - 1}`;
+	}
+	$: if (room === 6 && number === 24) {
+		next = '/art/6/24/#';
+	} else if (students[room - 1] === number) {
+		next = `/art/${room + 1}/1`;
+	} else {
+		next = `/art/${room}/${number + 1}`;
+	}
 </script>
 
 <div>
@@ -34,10 +34,10 @@
 				<a href={previous}>
 					<img class="bg-red-400 rounded-full p-3 w-12" src="/arrow_left.svg" alt="Arrow Left" />
 				</a>
-                <a href={next}>
-                    <img class="bg-red-400 rounded-full p-3 w-12" src="/arrow_right.svg" alt="Arrow Right" />
-                </a>
-            </div>
+				<a href={next}>
+					<img class="bg-red-400 rounded-full p-3 w-12" src="/arrow_right.svg" alt="Arrow Right" />
+				</a>
+			</div>
 			<h1 class="font-bold text-4xl pb-4 border-red-400 border-b-2">{data.ar.title}</h1>
 			<h3 class="py-4">{data.ar.description}</h3>
 			<a
