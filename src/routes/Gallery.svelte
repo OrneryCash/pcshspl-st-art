@@ -27,6 +27,7 @@
             active: false
         },
     ]
+    export let data;
 
     function handleMessage(event) {
         classroom.forEach((r) => {
@@ -48,7 +49,7 @@
     </div>
     {#each classroom as {room, active} (room)}
         {#if active}
-            <Showcase {room} />
+            <Showcase {room} {data} />
         {/if}
     {/each}
 </div>

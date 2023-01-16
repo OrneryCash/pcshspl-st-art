@@ -1,6 +1,7 @@
 <script>
     import Header from "./Header.svelte";
     import Gallery from "./Gallery.svelte";
+    export let data
 </script>
 
 <svelte:head>
@@ -20,4 +21,4 @@
         <h1>Y2K Street Art</h1>
     </div>
 </div>
-<Gallery />
+<Gallery {data} />
