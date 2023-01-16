@@ -209,7 +209,7 @@ export const art = [
 		title: 'Title',
 		description: 'Sample'
 	},
-    
+
 	{
 		room: 2,
 		number: 9,
@@ -223,14 +223,14 @@ export const art = [
 		title: 'Title',
 		description: 'Sample'
 	},
-    
+
 	{
 		room: 2,
 		number: 11,
 		title: 'Title',
 		description: 'Sample'
 	},
-    
+
 	{
 		room: 2,
 		number: 12,
@@ -322,7 +322,7 @@ export const art = [
 		description: 'Sample'
 	},
 
-    {
+	{
 		room: 3,
 		number: 1,
 		title: 'Title',
@@ -377,7 +377,7 @@ export const art = [
 		title: 'Title',
 		description: 'Sample'
 	},
-    
+
 	{
 		room: 3,
 		number: 9,
@@ -391,14 +391,14 @@ export const art = [
 		title: 'Title',
 		description: 'Sample'
 	},
-    
+
 	{
 		room: 3,
 		number: 11,
 		title: 'Title',
 		description: 'Sample'
 	},
-    
+
 	{
 		room: 3,
 		number: 12,
@@ -490,7 +490,7 @@ export const art = [
 		description: 'Sample'
 	},
 
-    {
+	{
 		room: 4,
 		number: 1,
 		title: 'Title',
@@ -545,7 +545,7 @@ export const art = [
 		title: 'Title',
 		description: 'Sample'
 	},
-    
+
 	{
 		room: 4,
 		number: 9,
@@ -559,14 +559,14 @@ export const art = [
 		title: 'Title',
 		description: 'Sample'
 	},
-    
+
 	{
 		room: 4,
 		number: 11,
 		title: 'Title',
 		description: 'Sample'
 	},
-    
+
 	{
 		room: 4,
 		number: 12,
@@ -658,7 +658,7 @@ export const art = [
 		description: 'Sample'
 	},
 
-    {
+	{
 		room: 5,
 		number: 1,
 		title: 'Title',
@@ -713,7 +713,7 @@ export const art = [
 		title: 'Title',
 		description: 'Sample'
 	},
-    
+
 	{
 		room: 5,
 		number: 9,
@@ -727,14 +727,14 @@ export const art = [
 		title: 'Title',
 		description: 'Sample'
 	},
-    
+
 	{
 		room: 5,
 		number: 11,
 		title: 'Title',
 		description: 'Sample'
 	},
-    
+
 	{
 		room: 5,
 		number: 12,
@@ -826,7 +826,7 @@ export const art = [
 		description: 'Sample'
 	},
 
-    {
+	{
 		room: 6,
 		number: 1,
 		title: 'Title',
@@ -881,7 +881,7 @@ export const art = [
 		title: 'Title',
 		description: 'Sample'
 	},
-    
+
 	{
 		room: 6,
 		number: 9,
@@ -895,14 +895,14 @@ export const art = [
 		title: 'Title',
 		description: 'Sample'
 	},
-    
+
 	{
 		room: 6,
 		number: 11,
 		title: 'Title',
 		description: 'Sample'
 	},
-    
+
 	{
 		room: 6,
 		number: 12,
@@ -992,5 +992,5 @@ export const art = [
 		number: 24,
 		title: 'Title',
 		description: 'Sample'
-	},
+	}
 ];

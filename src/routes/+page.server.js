@@ -1,4 +1,4 @@
-import { art } from "./data";
+import { art } from './data';
 
 export function load() {
 	return {
@@ -8,5 +8,5 @@ export function load() {
 			title: a.title,
 			image: `/room${a.room}/number${a.number}.webp`
 		}))
-	}
+	};
 }
