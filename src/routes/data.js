@@ -491,6 +491,13 @@ export const art = [
 	},
 
 	{
+		room: 3,
+		number: 25,
+		title: "Title",
+		description: "Sample"
+	},
+
+	{
 		room: 4,
 		number: 1,
 		title: 'Title',
