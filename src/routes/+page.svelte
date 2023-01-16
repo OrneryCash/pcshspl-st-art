@@ -1,6 +1,6 @@
 <script>
-    import Header from "./Header.svelte";
-    import Gallery from "./Gallery.svelte";
+    import Header from "../lib/Header.svelte";
+    import Gallery from "../lib/Gallery.svelte";
     export let data
 </script>
 
