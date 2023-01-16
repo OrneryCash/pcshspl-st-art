@@ -1,6 +1,7 @@
 <script>
 	import Header from '../lib/Header.svelte';
 	import Gallery from '../lib/Gallery.svelte';
+	import PageTransition from '../lib/PageTransition.svelte';
 	export let data;
 </script>
 
@@ -14,11 +15,13 @@
 	<meta charset="utf-8" />
 </svelte:head>
 
-<div class="bg-art bg-cover py-64 w-full flex flex-col items-center">
-	<Header />
-	<div class="text-white text-6xl text-left font-bold">
-		<h1>PCSHSPL</h1>
-		<h1>Y2K Street Art</h1>
+<PageTransition>
+	<div class="bg-art bg-cover py-64 w-full flex flex-col items-center">
+		<Header />
+		<div class="text-white text-6xl text-left font-bold">
+			<h1>PCSHSPL</h1>
+			<h1>Y2K Street Art</h1>
+		</div>
 	</div>
-</div>
-<Gallery {data} />
+	<Gallery {data} />
+</PageTransition>
