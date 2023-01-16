@@ -5,6 +5,7 @@ export function load() {
 		details: art.map((a) => ({
 			room: a.room,
 			number: a.number,
+			title: a.title,
 			image: `/room${a.room}/number${a.number}.webp`
 		}))
 	}

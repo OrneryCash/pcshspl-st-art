@@ -8,7 +8,7 @@
     {#each data.details as detail }
         {#if detail.room === room}
             <a href={`/art/${detail.room}/${detail.number}`}>
-                <img class="aspect-a3 w-40" src={detail.image} alt={`Class ${detail.room}`} in:fly="{{y: 200, duration:2000}}"/>
+                <img class="aspect-a3 w-40" src={detail.image} alt={detail.title} in:fly="{{y: 200, duration:2000}}"/>
             </a>
         {/if}
     {/each}
