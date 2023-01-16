@@ -1,7 +1,8 @@
 <script>
-    import { page } from "$app/stores"
+    export let data
 </script>
 
 <div>
-    <p>{JSON.stringify($page.params)}</p>
+    <h1>{data.ar.title}</h1>
+    <h3>{data.ar.description}</h3>
 </div>
