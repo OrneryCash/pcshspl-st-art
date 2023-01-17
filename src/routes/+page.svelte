@@ -16,9 +16,9 @@
 </svelte:head>
 
 <PageTransition>
-	<div class="bg-art bg-cover py-64 w-full flex flex-col items-center">
+	<div class="bg-art bg-cover py-52 sm:py-64 w-full flex flex-col items-center">
 		<Header />
-		<div class="text-white text-6xl text-left font-bold">
+		<div class="text-white text-4xl sm:text-6xl text-left font-bold">
 			<h1>PCSHSPL</h1>
 			<h1>Y2K Street Art</h1>
 		</div>
