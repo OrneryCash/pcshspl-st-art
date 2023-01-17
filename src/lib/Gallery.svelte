@@ -42,7 +42,7 @@
 </script>
 
 <div class="flex flex-col items-center -mt-20">
-	<div class="flex flex-row gap-x-4">
+	<div class="flex flex-row gap-x-4 gap-y-4 flex-wrap justify-center">
 		{#each classroom as { room, active } (room)}
 			<Button {room} {active} on:message={handleMessage} />
 		{/each}
