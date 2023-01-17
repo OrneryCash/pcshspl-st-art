@@ -41,8 +41,8 @@
 	}
 </script>
 
-<div class="flex flex-col items-center -mt-20">
-	<div class="flex flex-row gap-x-4 gap-y-4 flex-wrap justify-center">
+<div class="flex flex-col items-center -mt-40 sm:-mt-20">
+	<div class="grid grid-cols-3 sm:grid-cols-6 gap-x-4 gap-y-4 flex-wrap justify-center">
 		{#each classroom as { room, active } (room)}
 			<Button {room} {active} on:message={handleMessage} />
 		{/each}
