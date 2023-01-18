@@ -9,7 +9,7 @@
 		{#if detail.room === room}
 			<a href={`/art/${detail.room}/${detail.number}`}>
 				<img
-					class="aspect-a3 w-40"
+					class="aspect-square w-40"
 					src={detail.image}
 					alt={detail.title}
 					in:fly={{ y: 200, duration: 2000 }}
