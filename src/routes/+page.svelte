@@ -6,8 +6,8 @@
 </script>
 
 <svelte:head>
-	<title>PCSHSPL Y2K Street Art</title>
-	<meta name="description" content="PCSHSPL Y2K Street Art" />
+	<title>PCSHSPL Street Art</title>
+	<meta name="description" content="PCSHSPL Street Art" />
 	<meta name="keywords" content="Y2K, Street Art, PCSHSPL" />
 	<meta name="author" content="Teerapad Pipadboonyarat" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -20,7 +20,7 @@
 		<Header />
 		<div class="text-white text-4xl sm:text-6xl text-left font-bold">
 			<h1>PCSHSPL</h1>
-			<h1>Y2K Street Art</h1>
+			<h1>Street Art</h1>
 		</div>
 	</div>
 	<Gallery {data} />
