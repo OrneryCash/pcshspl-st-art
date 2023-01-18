@@ -28,11 +28,17 @@ const c_room = [
     }
 ] 
 
-export const classroom = writable(c_room)
+const initial = browser ? JSON.parse(localStorage.getItem("classroom")) ?? c_room : c_room
+export const classroom = writable(initial)
 
-if (browser) {
-    classroom.set(JSON.parse(localStorage.getItem("classroom")) || c_room)
-    classroom.subscribe(value => {
-        localStorage.setItem("classroom", JSON.stringify(value))
-    })
-}
+classroom.subscribe(value => {
+    if (browser) {
+       localStorage.setItem("classroom", JSON.stringify(value)) 
+    }
+})
+// if (browser) {
+//     classroom.set(JSON.parse(localStorage.getItem("classroom")) || c_room)
+//     classroom.subscribe(value => {
+//         localStorage.setItem("classroom", JSON.stringify(value))
+//     })
+// }

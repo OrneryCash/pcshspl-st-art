@@ -12,7 +12,7 @@
 				r.active = false;
 			}
 		});
-		$classroom = $classroom
+		classroom.set($classroom)
 	}
 </script>
 
