@@ -27,20 +27,26 @@
 			<h1 class="text-black">LOGO</h1>
 		</a>
 	</div>
-	<div class="flex flex-col items-center sm:flex-row sm:items-start justify-center gap-8 sm:gap-12 mt-10 w-full">
+	<div
+		class="flex flex-col items-center sm:flex-row sm:items-start justify-center gap-8 sm:gap-12 mt-10 w-full"
+	>
 		<img class="aspect-a3 w-96" src={`/room${room}/number${number}.webp`} alt={data.ar.title} />
 		<div class="w-3/4 sm:w-1/3">
 			<div class="flex gap-5 mb-4">
-                {#if previous !== ''}
-                    <a href={previous}>
-                        <img class="bg-red-400 rounded-full p-3 w-12" src="/arrow_left.svg" alt="Arrow Left" />
-                    </a>
-                {/if}
-                {#if next !== ''}
-                    <a href={next}>
-                        <img class="bg-red-400 rounded-full p-3 w-12" src="/arrow_right.svg" alt="Arrow Right" />
-                    </a>
-                {/if}
+				{#if previous !== ''}
+					<a href={previous}>
+						<img class="bg-red-400 rounded-full p-3 w-12" src="/arrow_left.svg" alt="Arrow Left" />
+					</a>
+				{/if}
+				{#if next !== ''}
+					<a href={next}>
+						<img
+							class="bg-red-400 rounded-full p-3 w-12"
+							src="/arrow_right.svg"
+							alt="Arrow Right"
+						/>
+					</a>
+				{/if}
 			</div>
 			<h1 class="font-bold text-4xl pb-4 border-red-400 border-b-2">{data.ar.title}</h1>
 			<h3 class="py-4">{data.ar.description}</h3>
