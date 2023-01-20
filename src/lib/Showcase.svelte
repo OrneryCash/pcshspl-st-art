@@ -5,7 +5,7 @@
 </script>
 
 <div
-	class="whitespace-nowrap overflow-auto sm:grid sm:grid-cols-5 mt-6 w-full sm:place-items-center"
+	class="whitespace-nowrap overflow-auto sm:grid sm:grid-cols-4 mt-6 w-full sm:place-items-center"
 >
 	{#each data.details as detail}
 		{#if detail.room === room}
