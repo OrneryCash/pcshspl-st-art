@@ -5,11 +5,11 @@
 </script>
 
 <div
-	class="whitespace-nowrap overflow-auto sm:grid sm:grid-cols-4 mt-6 w-full sm:place-items-center"
+	class="whitespace-nowrap overflow-auto snap-mandatory snap-x sm:snap-none sm:grid sm:grid-cols-4 mt-6 w-full sm:place-items-center"
 >
 	{#each data.details as detail}
 		{#if detail.room === room}
-			<a class="inline-block" href={`/art/${detail.room}/${detail.number}`}>
+			<a class="inline-block snap-center sm:snap-align-none" href={`/art/${detail.room}/${detail.number}`}>
 				<img
 					class="aspect-square w-full"
 					src={detail.image}
