@@ -30,7 +30,7 @@
 	<div
 		class="flex flex-col items-center sm:flex-row sm:items-start justify-center gap-8 sm:gap-12 mt-10 w-full"
 	>
-		<img class="aspect-a3 w-96" src={`/room${room}/number${number}.webp`} alt={data.ar.title} />
+		<img class="aspect-square w-96" src={`/room${room}/number${number}.webp`} alt={data.ar.title} />
 		<div class="w-3/4 sm:w-1/3">
 			<div class="flex gap-5 mb-4">
 				{#if previous !== ''}
