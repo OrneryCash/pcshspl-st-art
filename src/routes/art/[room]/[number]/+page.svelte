@@ -24,7 +24,7 @@
 <div>
 	<div class="w-full flex justify-center bg-red-400 py-4">
 		<a href="/">
-			<h1 class="text-black">LOGO</h1>
+			<img class="w-16 sm:w-20" src="/school-logo.webp" alt="PCSHSPL Logo"/>
 		</a>
 	</div>
 	<div
