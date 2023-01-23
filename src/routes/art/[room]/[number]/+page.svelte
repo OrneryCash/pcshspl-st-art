@@ -12,7 +12,7 @@
 	} else {
 		previous = `/art/${room}/${number - 1}`;
 	}
-	$: if (room === 6 && number === 24) {
+	$: if (room === 6 && number === 23) {
 		next = '';
 	} else if (students[room - 1] === number) {
 		next = `/art/${room + 1}/1`;
