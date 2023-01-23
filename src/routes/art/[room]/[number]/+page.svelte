@@ -50,14 +50,16 @@
 			</div>
 			<h1 class="font-bold text-4xl pb-4 border-red-400 border-b-2">{data.ar.title}</h1>
 			<h3 class="py-4">{data.ar.description}</h3>
-			<a
-				class="flex items-center gap-2 bg-gradient-to-r from-yellow-400 via-red-400 to-purple-600 p-4 w-max rounded-full"
-				href="https://instagram.com/instagram"
-				target="_blank"
-				rel="noreferrer"
-			>
-				<img class="w-5" src="/ig_logo_white.svg" alt="IG Logo" />
-			</a>
+			{#if data.ar.instagram !== ""}
+				<a
+					class="flex items-center gap-2 bg-gradient-to-r from-yellow-400 via-red-400 to-purple-600 p-4 w-max rounded-full"
+					href={`https://instagram.com/${data.ar.instagram}`}
+					target="_blank"
+					rel="noreferrer"
+				>
+					<img class="w-5" src="/ig_logo_white.svg" alt="IG Logo" />
+				</a>
+			{/if}
 		</div>
 	</div>
 </div>
