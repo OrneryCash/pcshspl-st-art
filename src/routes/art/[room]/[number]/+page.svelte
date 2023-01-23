@@ -2,7 +2,7 @@
 	export let data;
 	$: room = data.ar.room;
 	$: number = data.ar.number;
-	const students = [24, 24, 25, 24, 23, 24];
+	const students = [24, 24, 25, 23, 23, 23];
 	let previous = '';
 	let next = '';
 	$: if (room === 1 && number === 1) {
