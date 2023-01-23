@@ -15,7 +15,7 @@
 </svelte:head>
 
 <PageTransition>
-	<div class="bg-art bg-cover bg-bottom sm:bg-center py-36 sm:py-72 sm:h-96 w-full flex flex-col items-center">
+	<div class="bg-art bg-cover bg-bottom sm:bg-center py-40 sm:py-72 sm:h-96 w-full flex flex-col items-center">
 		<Header />
 	</div>
 	<Gallery {data} />
