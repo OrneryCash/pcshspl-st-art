@@ -24,7 +24,7 @@
 <div>
 	<div class="w-full flex justify-center bg-red-400 py-4">
 		<a href="/">
-			<img class="w-16 sm:w-20" src="/school-logo.webp" alt="PCSHSPL Logo"/>
+			<img class="w-16 sm:w-20" src="/school-logo.webp" alt="PCSHSPL Logo" />
 		</a>
 	</div>
 	<div
@@ -50,7 +50,7 @@
 			</div>
 			<h1 class="font-bold text-4xl pb-4 border-red-400 border-b-2">{data.ar.title}</h1>
 			<h3 class="py-4">{data.ar.description}</h3>
-			{#if data.ar.instagram !== ""}
+			{#if data.ar.instagram !== ''}
 				<a
 					class="flex items-center gap-2 bg-gradient-to-r from-yellow-400 via-red-400 to-purple-600 p-4 w-max rounded-full"
 					href={`https://instagram.com/${data.ar.instagram}`}

@@ -9,7 +9,10 @@
 >
 	{#each data.details as detail}
 		{#if detail.room === room}
-			<a class="inline-block snap-center sm:snap-align-none" href={`/art/${detail.room}/${detail.number}`}>
+			<a
+				class="inline-block snap-center sm:snap-align-none"
+				href={`/art/${detail.room}/${detail.number}`}
+			>
 				<img
 					class="aspect-square w-full"
 					src={detail.image}
