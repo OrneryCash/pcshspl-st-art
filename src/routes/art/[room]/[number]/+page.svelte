@@ -32,7 +32,7 @@
 	>
 		<div class="flex flex-col items-center w-2/3 md:w-1/3">
 			<img class="aspect-square w-full" src={`/art/room${room}/number${number}.webp`} alt={data.ar.title} />
-			<div class="text-gray-500 flex flex-col font-bold text-lg">
+			<div class="text-gray-500 flex flex-col font-bold text-sm sm:text-lg">
 				<span>{data.ar.technique}</span>	
 				<span>{data.ar.size}</span>
 			</div>
@@ -55,18 +55,18 @@
 					</a>
 				{/if}
 			</div>
-			<h1 class="font-bold text-4xl pb-4 border-red-400 border-b-2">{data.ar.title}</h1>
-			<h3 class="py-4">{data.ar.description}</h3>
-			{#if data.ar.instagram !== ""}
-				<a
-					class="flex items-center gap-2 bg-gradient-to-r from-yellow-400 via-red-400 to-purple-600 p-4 w-max rounded-full"
-					href={`https://instagram.com/${data.ar.instagram}`}
-					target="_blank"
-					rel="noreferrer"
-				>
-					<img class="w-5" src="/ig_logo_white.svg" alt="IG Logo" />
-				</a>
-			{/if}
+			<h1 class="font-bold text-3xl sm:text-4xl pb-4 border-red-400 border-b-2">{data.ar.title}</h1>
+			<h3 class="py-4 text-base sm:text-lg">{data.ar.description}</h3>
+			<div class="flex items-center gap-5 mb-4">
+				{#if data.ar.instagram !== ""}
+					<a href={`https://instagram.com/${data.ar.instagram}`} target="_blank" rel="noreferrer">
+						<img class="rounded-full w-16 sm:w-20 border-red-400 border-2" src={`/artists/room${room}/number${number}.webp`} alt={`${data.ar.firstName} ${data.ar.lastName}`}/>
+					</a>
+				{:else}
+					<img class="rounded-full w-16 sm:w-20 border-red-400 border-2" src={`/artists/room${room}/number${number}.webp`} alt={`${data.ar.firstName} ${data.ar.lastName}`}/>	
+				{/if}
+				<p class="text-base sm:text-lg">{data.ar.firstName} {data.ar.lastName}</p>
+			</div>
 		</div>
 	</div>
 </div>
