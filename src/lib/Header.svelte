@@ -1,3 +1,3 @@
 <div class="w-full flex justify-center absolute top-5">
-	<h1 class="text-white">LOGO</h1>
+	<img class="w-16 sm:w-20" src="school-logo.webp" alt="PCSHSPL Logo" />
 </div>
