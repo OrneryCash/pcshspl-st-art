@@ -1827,5 +1827,17 @@ export const art = [
 		size: 'A3 (29.7 x 42.0 cm)',
 		firstName: 'สโรชา',
 		lastName: 'กล้าหาญ'
+	},
+
+	{
+		room: 7,
+		number: 1,
+		title: 'ราชาแห่งบุปผา',
+		description: 'งามด้วยสี หอมด้วยกลิ่น อ่อนหวานยามสัมผัส',
+		instagram: '',
+		technique: 'สี้น้ำ',
+		size: "25 x 35 cm",
+		firstName: 'วิไลลักษณ์',
+		lastName: 'คำทา'
 	}
 ];
