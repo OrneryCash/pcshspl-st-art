@@ -6,7 +6,7 @@ export function load() {
 			room: a.room,
 			number: a.number,
 			title: a.title,
-			image: `/room${a.room}/number${a.number}.webp`
+			image: `/art/room${a.room}/number${a.number}.webp`
 		}))
 	};
 }

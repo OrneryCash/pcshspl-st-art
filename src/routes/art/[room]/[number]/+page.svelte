@@ -31,7 +31,7 @@
 		class="flex flex-col items-center md:flex-row md:items-start justify-center gap-8 md:gap-12 mt-10 w-full"
 	>
 		<div class="flex flex-col items-center w-2/3 md:w-1/3">
-			<img class="aspect-square w-full" src={`/room${room}/number${number}.webp`} alt={data.ar.title} />
+			<img class="aspect-square w-full" src={`/art/room${room}/number${number}.webp`} alt={data.ar.title} />
 			<div class="text-gray-500 flex flex-col font-bold text-lg">
 				<span>{data.ar.technique}</span>	
 				<span>{data.ar.size}</span>
