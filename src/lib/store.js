@@ -25,6 +25,10 @@ const c_room = [
 	{
 		room: 6,
 		active: false
+	},
+	{
+		room: 7,
+		active: false
 	}
 ];
 
