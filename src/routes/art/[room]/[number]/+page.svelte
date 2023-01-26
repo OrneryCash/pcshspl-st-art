@@ -2,7 +2,7 @@
 	export let data;
 	$: room = data.ar.room;
 	$: number = data.ar.number;
-	const students = [24, 24, 25, 23, 23, 23];
+	const students = [24, 24, 25, 23, 23, 23, 1];
 	let previous = '';
 	let next = '';
 	$: if (room === 1 && number === 1) {
@@ -12,7 +12,7 @@
 	} else {
 		previous = `/art/${room}/${number - 1}`;
 	}
-	$: if (room === 6 && number === 23) {
+	$: if (room === 7 && number === 1) {
 		next = '';
 	} else if (students[room - 1] === number) {
 		next = `/art/${room + 1}/1`;
