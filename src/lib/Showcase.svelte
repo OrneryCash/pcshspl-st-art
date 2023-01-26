@@ -5,7 +5,7 @@
 </script>
 
 {#if room === 7}
-	<div class="flex justify-center w-2/3 items-center mt-8">
+	<div class="flex justify-center w-full sm:w-2/3 items-center mt-8">
 		{#each data.details as detail}
 			{#if detail.room === room}
 				<a
