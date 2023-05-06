@@ -2,28 +2,18 @@
 	export let room;
 	export let active;
 
-	import { createEventDispatcher } from 'svelte';
+	import { getContext } from 'svelte';
 
-	const dispatch = createEventDispatcher();
+	const handleMessage = getContext("handleMessage")
 	function sendData() {
-		dispatch('message', {
-			room: room
-		});
+		handleMessage({room: room})
 	}
 </script>
 
-{#if room === 7}
-	<button
-		class={`${
-			active && 'bg-red-400'
-		} py-1.5 sm:py-3 px-4 sm:px-6 rounded-full border-red-400 text-white border-2`}
-		on:click={sendData}>T.</button
-	>
-{:else}
-	<button
-		class={`${
-			active && 'bg-red-400'
-		} py-1.5 sm:py-3 px-4 sm:px-6 rounded-full border-red-400 text-white border-2`}
-		on:click={sendData}>6/{room}</button
-	>
-{/if}
+<button
+    class="py-1.5 sm:py-3 px-4 sm:px-6 rounded-full border-red-400 text-white border-2"
+    class:bg-red-400={active}
+    on:click={sendData}
+>
+    {room === 7 ? 'T.' : `6/${room}`}
+</button>
