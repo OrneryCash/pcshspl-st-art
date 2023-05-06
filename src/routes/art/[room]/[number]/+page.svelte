@@ -3,22 +3,31 @@
 	$: room = data.ar.room;
 	$: number = data.ar.number;
 	const students = [24, 24, 25, 23, 23, 23, 1];
+
+	function generateURL(room, number) {
+		return `/art/${room}/${number}`
+	}
+
 	let previous = '';
 	let next = '';
-	$: if (room === 1 && number === 1) {
-		previous = '';
-	} else if (number === 1) {
-		previous = `/art/${room - 1}/${students[room - 2]}`;
-	} else {
-		previous = `/art/${room}/${number - 1}`;
+
+	$: {
+		if (room === 1 && number === 1) {
+			previous = '';
+		} else if (number === 1) {
+			previous = generateURL(room - 1, students[room - 2])
+		} else {
+			previous = generateURL(room, number - 1)
+		}
+		if (room === 7 && number === 1) {
+			next = '';
+		} else if (students[room - 1] === number) {
+			next = generateURL(room + 1, 1);
+		} else {
+			next = generateURL(room, number + 1)
+		}
 	}
-	$: if (room === 7 && number === 1) {
-		next = '';
-	} else if (students[room - 1] === number) {
-		next = `/art/${room + 1}/1`;
-	} else {
-		next = `/art/${room}/${number + 1}`;
-	}
+
 </script>
 
 <div>
