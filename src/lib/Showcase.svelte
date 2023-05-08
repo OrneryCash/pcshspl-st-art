@@ -1,5 +1,5 @@
 <script>
-	import { fly } from 'svelte/transition';
+	import { fade } from 'svelte/transition';
 	export let room;
 	export let data;
 </script>
@@ -8,12 +8,13 @@
 	<div class="flex justify-center w-full sm:w-2/3 items-center mt-8">
 		{#each data.details as detail}
 			{#if detail.room === room}
-				<a href={`/art/${detail.room}/${detail.number}`}>
+				<a href={`/art/${detail.room}/${detail.number}`} key={detail.number}>
 					<img
 						class="aspect-square w-full"
 						src={detail.image}
 						alt={detail.title}
-						in:fly={{ y: 200, duration: 2000 }}
+						in:fade={{ duration: 1000 }}
+						loading="lazy"
 					/>
 				</a>
 			{/if}
@@ -28,12 +29,14 @@
 				<a
 					class="inline-block snap-center sm:snap-align-none"
 					href={`/art/${detail.room}/${detail.number}`}
+					key={detail.number}
 				>
 					<img
 						class="aspect-square w-full"
 						src={detail.image}
 						alt={detail.title}
-						in:fly={{ y: 200, duration: 2000 }}
+						in:fade={{ duration: 1000 }}
+						loading="lazy"
 					/>
 				</a>
 			{/if}
