@@ -16,14 +16,13 @@
 		classroom.set($classroom);
 	}
 
-	setContext("handleMessage", handleMessage)
-
+	setContext('handleMessage', handleMessage);
 </script>
 
 <div class="flex flex-col items-center -mt-[5.25rem] sm:-mt-20">
 	<div class="grid grid-cols-4 sm:grid-cols-7 gap-x-3 gap-y-2 justify-center text-sm sm:text-base">
 		{#each $classroom as { room, active } (room)}
-			<Button {room} {active}/>
+			<Button {room} {active} />
 		{/each}
 	</div>
 	{#each $classroom as { room, active } (room)}
