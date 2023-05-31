@@ -4,15 +4,16 @@ import { vitePreprocess } from '@sveltejs/kit/vite';
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
 	kit: {
-		adapter: adapter()
+		adapter: adapter(),
+		csp: {
+			mode: 'hash',
+			directives: {
+				'script-src': ['self'],
+				'frame-ancestors': ['self']
+			}
+		}
 	},
-	csp: {
-		mode: "hash",
-		directives: {
-			'script-src': ["'self'"],
-			'frame-ancestors': ["'self'"]
-		},
-	},
+
 	preprocess: vitePreprocess()
 };
 
