@@ -7,8 +7,10 @@ const config = {
 		adapter: adapter()
 	},
 	csp: {
+		mode: "hash",
 		directives: {
-			'script-src': ['self']
+			'script-src': ['self'],
+			'frame-ancestors': ['self']
 		},
 		reportOnly: {
 			'script-src': ['self']
