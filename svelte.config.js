@@ -9,12 +9,9 @@ const config = {
 	csp: {
 		mode: "hash",
 		directives: {
-			'script-src': ['self'],
-			'frame-ancestors': ['self']
+			'script-src': ["'self'"],
+			'frame-ancestors': ["'self'"]
 		},
-		reportOnly: {
-			'script-src': ['self']
-		}
 	},
 	preprocess: vitePreprocess()
 };
