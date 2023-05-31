@@ -6,6 +6,14 @@ const config = {
 	kit: {
 		adapter: adapter()
 	},
+	csp: {
+		directives: {
+			'script-src': ['self']
+		},
+		reportOnly: {
+			'script-src': ['self']
+		}
+	},
 	preprocess: vitePreprocess()
 };
 
